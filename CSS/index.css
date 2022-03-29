@@ -2,64 +2,19 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.complete{
+.complete p{
     text-decoration: line-through;
+    color: red;
 }
 
 li{
     list-style: none;
 }
 
-body{
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
+.trying{
+    flex: 0.6;
 }
 
-.liFather{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 600px;
-}
-
-.crossIcon{
-    background-color: #FD5D5D;
-    border-radius: 10px;
-    padding: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.crossIcon:hover{
-    cursor: pointer;  
-}
-
-.crossIcon:hover{
-    filter: brightness(90%);
-    transition: filter .55s;
-}
-
-.header{
-    display: flex;
-    flex-direction: Row;
-    justify-content: space-around;
-    border: 1px solid black;
-}
-
-.subThings{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-self: center;
-    align-items: center;
-    border: 1px solid black;
-    padding: 5px;
-}
-
-#input-container{
-    margin: 20px;
+i{
+    font-size: 13;
 }

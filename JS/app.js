@@ -12,7 +12,7 @@ function createTodo(){
     }
 
     var li = document.createElement("li");
-    li.className = "liFather";
+    li.className = "d-flex align-items-center justify-content-between align-items-center shadow-lg p-3 mb-1 bg-white rounded";
 
     var checkbox = document.createElement("input");
     checkbox.classList.add("checkbox");
@@ -20,10 +20,11 @@ function createTodo(){
 
     var paragraph = document.createElement("p");
     paragraph.textContent = text;
+    paragraph.className = "w-75 p-3"
 
     var remove = document.createElement("span");
-    remove.innerHTML = "&cross;";
-    remove.className = "crossIcon";
+    remove.innerHTML = `<i class="fa-solid fa-trash-can"></i>`;
+    remove.className = "btn btn-danger";
 
     li.appendChild(checkbox);
     li.appendChild(paragraph);
@@ -61,6 +62,7 @@ list.addEventListener("click", (event) => {
             removeTodo(event.target);
             break;
     }
+
 });
 
 list.addEventListener("change", (event) => {
