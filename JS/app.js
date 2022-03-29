@@ -14,7 +14,7 @@ function createTodo(){
     }
 
     var li = document.createElement("li");
-    li.className = "d-flex align-items-center justify-content-between align-items-center shadow-lg p-3 mb-1 bg-white rounded";
+    li.className = "d-flex align-items-center justify-content-between align-items-center shadow-lg p-3 mb-1 bg-white rounded w-75 p-3 mx-auto";
 
     var checkbox = document.createElement("input");
     checkbox.classList.add("checkbox");
